@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" href="style.css" />
+		 <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+		<title>IT'S NOW BABY</title>
+	</head>
+
+	<body>
+		<div id="bloc_page">
+<!-- Header -->
+			<header>
+				<div id="titre_principal">
+				    <a href="images/title_logo.jpg"><img src="images/title_logo_thumb.jpg" id="title_logo" alt="LFKs" title="Cliquez pour agrandir" /></a>
+				    <h1>IT'S NOW BABY</h1>
+                    <h2>LFKS, EMSE MP 2013</h2>
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Recherche</a></li>
+                        <li><a href="#">A(rt)propos</a></li>
+                    </ul>
+                </nav>
+			</header>
+			
+<!-- Music -->
+			<div id="music">
+			Musique
+			
+			<div id="play_list">
+				Play Liste : black Vador, la danse des canards
+			</div>
+			
+			<div id="player">
+				Musique en cours
+				<audio src="music/Playlist vNv/1,2,3/2 Black 2 Strong/Burn Baby Burn/Burn Baby Burn vNn.mp3" controls>Il est temps de mettre à jour votre navigateur !</audio>
+			</div>
+			
+			</div>
+<section>			
+<!-- Photos -->
+			<div id="photos">
+			<a href="img_test/theme_blackpower/blackpower1_thumb.jpg"><img src="img_test/theme_blackpower/blackpower1_thumb.jpg" alt="blackpower1_thumb.jpg" title="Cliquez pour agrandir" /></a>
+			<a href="img_test/theme_blackpower/blackpower2_thumb.jpg"><img src="img_test/theme_blackpower/blackpower2_thumb.jpg" alt="blackpower2_thumb.jpg" title="Cliquez pour agrandir" /></a>
+			<a href="img_test/theme_blackpower/blackpower3_thumb.jpg"><img src="img_test/theme_blackpower/blackpower3_thumb.jpg" alt="blackpower3_thumb.jpg" title="Cliquez pour agrandir" /></a>
+			<a href="img_test/theme_blackpower/blackpower4_thumb.jpg"><img src="img_test/theme_blackpower/blackpower4_thumb.jpg" alt="blackpower4_thumb.jpg" title="Cliquez pour agrandir" /></a>
+			<a href="img_test/theme_blackpower/blackpower5_thumb.jpg"><img src="img_test/theme_blackpower/blackpower5_thumb.jpg" alt="blackpower5_thumb.jpg" title="Cliquez pour agrandir" /></a>
+			<a href="img_test/theme_blackpower/blackpower6_thumb.jpg"><img src="img_test/theme_blackpower/blackpower6_thumb.jpg" alt="blackpower6_thumb.jpg" title="Cliquez pour agrandir" /></a>
+			<a href="img_test/theme_blackpower/blackpower7_thumb.jpg"><img src="img_test/theme_blackpower/blackpower7_thumb.jpg" alt="blackpower7_thumb.jpg" title="Cliquez pour agrandir" /></a>			
+			</div>
+			
+<!-- Document principal -->
+			<div id="document">
+			Archives
+			It’s Now Baby!!!
+Enfin à cet ensemble s’ajoute la création et l’édition d’un ouvrage électronique (tablettes numériques), concentrant la documentation et les références de
+l’ensemble des projets et témoignant des travaux d’études, de recherches et de réflexions ayant prévalus à leur réalisation. Sous le titre de It’s Now Baby!, cette édition compte elle-même en tant que création, la septième de la série. Elle est l’objet d’une collaboration avec l’École nationale supérieure des mines de
+Saint-Étienne, Centre de microélectronique de Provence à Gardanne dans le cadre des ateliers de l’Euro-Méditerranée.
+			</div>
+
+<!-- Video -->
+			<div id="video">
+			Video		
+			<video controls width="400">
+    			<source src="Films/Adam Clayton Powell/mp4 Adam Clayton Powell/Adam Clayton Powell explains Black Power 1968.ipad.mp4" />
+    		<source src="Films/Adam Clayton Powell/avi Adam Clayton Powell/Adam Clayton Powell explains Black Power 1968.avi" />
+    			<source src="Films/Adam Clayton Powell/flv Adam Clayton Powell/Adam C powel Black Power.flv" />		
+    		Il est temps de mettre à jour votre navigateur  !
+			</video>		
+			</div>
+</section>
+
+<!-- Footer -->
+			<footer id="footer">
+			LFKs, Ecole des Mines de St Etienne, 3 janv 2013 
+			</footer>		
+        </div>
+        
+<!--  test de scripts -->        
+        <!--  test de modif d'une image -->
+        <script>
+   	        var query = document.querySelectorAll('#photos img');
+
+    		query[0].setAttribute('src', 'img_test/theme_blackpower/blackpower2_thumb.jpg'); // On édite l'attribut « href »
+	        var href = query[0].getAttribute('src'); // On récupère l'attribut « href »
+    		alert('size='+query.length + ', src:'+href);        
+	    </script>
+	   
+        <!-- test d'ajout d'un elt-->
+         <script>        
+		var newLink = document.createElement('a');
+		var newLinkText = document.createTextNode("LFKs");
+
+		newLink.id    = 'lfks';
+		newLink.href  = 'http://www.epidemic.net/fr/art/bruyere/index.html';
+		newLink.title = 'LFKs : JM Bruyère';
+		newLink.setAttribute('tabindex', '10');
+
+		newLink.appendChild(newLinkText);  
+
+		document.getElementById('video').appendChild(newLink);
+	        
+  		</script>
+    </body>
+</html>
